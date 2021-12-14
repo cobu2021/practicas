@@ -1,0 +1,150 @@
+<<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Reto Semana 3</title>
+  </head>
+  <body>
+    <header>
+      <!-- ESTO PARA EL LOGO -->
+      <div>
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <!-- Elementos del menu -->
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Features</a>
+            </li>
+            <li>
+              <a href="">Team</a>
+            </li>
+            <li>
+              <a href="">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
+[19:14]
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(218, 28%, 13%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+ul li {
+  padding: 10px;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+NUEVO
+
+Linder Hassinger — hoy a las 19:45
+<main class="root">
+      <div>
+        <img
+          class="image__intro"
+          src="./images/illustration-intro.png"
+          alt=""
+        />
+      </div>
+      <div class="container__child">
+        <h1 class="title">
+          All your files in one secure location, accesible anywhere.
+        </h1>
+      </div>
+      <div class="container__child">
+        <p class="text__intro">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          doloribus rerum corrupti aut hic voluptatibus accusantium
+          exercitationem officiis voluptates, temporibus optio. Nam quidem modi
+          consectetur consequatur assumenda sed architecto earum?
+        </p>
+      </div>
+      <div>
+        <button class="btn__started">Get started</button>
+      </div>
+    </main>
+[19:45]
+/* INTRO SRYLES */
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.root div {
+  margin-bottom: 20px;
+}
+
+.image__intro {
+  max-width: 480px;
+}
+
+.container__child {
+  width: 45%;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+}
+
+.text__intro {
+  color: #fff;
+  font-weight: 400;
+}
+
+.btn__started {
+  border: none;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  font-family: "Raleway", sans-serif;
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: #ffff;
+  text-transform: capitalize;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+}
